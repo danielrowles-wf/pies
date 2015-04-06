@@ -3,6 +3,6 @@ pies
 
 I like tasty pies. Do you?
 
-Mmmmmm.
+Of course you do :)
 
-Yummy.
+Moooooooooo.
