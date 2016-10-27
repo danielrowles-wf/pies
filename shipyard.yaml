@@ -1,0 +1,9 @@
+---
+base 'ubuntu/trusty'
+
+apt:
+    packages:
+        - git
+
+after_install:
+    - echo "PIES ARE YUMMY"
