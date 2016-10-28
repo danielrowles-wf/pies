@@ -11,5 +11,9 @@ apt:
     - wget
     - tar
 
+python27:
+  packages:
+    - pymysql==0.6
+
 after_install:
     - echo "HI, kill me please"
