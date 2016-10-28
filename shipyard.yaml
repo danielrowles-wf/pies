@@ -2,8 +2,8 @@
 base 'ubuntu/trusty'
 
 apt:
-    packages:
-        - git
+  packages:
+    - git
 
 after_install:
-    - echo "PIES ARE YUMMY"
+  - echo "PIES ARE YUMMY"
