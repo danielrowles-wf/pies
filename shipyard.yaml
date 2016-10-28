@@ -12,4 +12,4 @@ apt:
     - tar
 
 after_install:
-    - echo "HELLO WORLD"
+    - echo "kill me please"
