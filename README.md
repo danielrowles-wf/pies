@@ -1,4 +1,4 @@
-pies
+Pies
 ====
 
 I like tasty pies. Do you?
