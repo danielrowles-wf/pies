@@ -11,7 +11,7 @@ env:
   - EAT_PIES_SLOWLY=3
 
 script:
-  - echo 'HELLLLO'
+  - echo 'HEL'
   # - nosetests
   - python setup.py sdist
   - 'echo "ALL UR WEBFILINGS ARE BELONG TO WORKIVA: $HOME"'
