@@ -1,5 +1,5 @@
 ---
-base: 'ubuntu/trusty'
+base: 'ubuntu/xenial'
 
 apt:
   packages:
@@ -16,4 +16,5 @@ python27:
     - pymysql==0.6
 
 after_install:
+    - lsb_release -a
     - echo "yo, kill me please"
