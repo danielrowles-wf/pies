@@ -11,13 +11,11 @@ env:
   - EAT_PIES_SLOWLY=3
 
 script:
-  - echo 'HEL'
+  - printenv | grep 'GIT*'
   # - nosetests
-  - python setup.py sdist
-  - 'echo "ALL UR WEBFILINGS ARE BELONG TO WORKIVA: $HOME"'
+  - python setup.py sdist 
   - ls -al $HOME
   - touch $HOME/pies.txt
-  - 'echo "TEST REPORTS DIR: $TEST_REPORTS_DIR"'
   - mkdir test-reports || true
   - cp test-xml/*.xml test-reports/
   - find . -type f -ls
