@@ -16,5 +16,5 @@ python27:
     - pymysql==0.6
 
 after_install:
-    - lsb_release -a
+    - cat /etc/*release
     - echo "yo, kill me please"
