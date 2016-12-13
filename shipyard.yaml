@@ -1,5 +1,5 @@
 ---
-base: 'ubuntu/xenial'
+base: 'ubuntu/trusty'
 
 apt:
   packages:
@@ -14,7 +14,13 @@ apt:
 python27:
   packages:
     - pymysql==0.6
+  requirements:
+    - requirements.txt
 
-after_install:
-    - cat /etc/*release
-    - echo "yo, kill me please"
+npm:
+  packages:
+    - grunt-cli
+    - w-auth-proxy
+
+after_install: 
+  - echo "yo, kill me please"
