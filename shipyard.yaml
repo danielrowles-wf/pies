@@ -3,13 +3,7 @@ base: 'ubuntu/trusty'
 
 apt:
   packages:
-    - apt-transport-https
     - git
-    - nginx
-    - supervisor
-    - unzip
-    - wget
-    - tar
 
 python27:
   packages:
@@ -19,8 +13,7 @@ python27:
 
 npm:
   packages:
-    - grunt-cli
-    - w-auth-proxy
+    - grunt 
 
 after_install: 
   - echo "yo, kill me please"
