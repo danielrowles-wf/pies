@@ -13,7 +13,7 @@ python27:
 
 npm:
   packages:
-    - grunt 
+    - grunt-cli 
 
 after_install: 
   - echo "yo, kill me please"
