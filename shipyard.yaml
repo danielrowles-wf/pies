@@ -7,8 +7,7 @@ apt:
 
 python27:
   packages:
-    - boto  
-    - pbr
+    - boto
   requirements:
     - requirements.txt
 
