@@ -1,6 +1,8 @@
 project: python
 runtime: 2.7
 
+runner_image: docker.webfilings.org/devops/smithy-runner-java1.8:1.11.0
+
 requirements:
   - requirements.txt
   - requirements_dev.txt
@@ -8,7 +10,7 @@ requirements:
 env:
   - LIKES=PIES
   - EATS=TASTY_PIES
-  - EAT_PIES_SLOWLY=2
+  - EAT_PIES_SLOWLY=10
 
 script:
   - nosetests
@@ -17,11 +19,11 @@ script:
   - ls -al $HOME
   - touch $HOME/pies.txt
   - 'echo "TEST REPORTS DIR: $TEST_REPORTS_DIR"'
-  - mkdir test-reports || true
-  - cp test-xml/*.xml test-reports/
+  - cp test-xml/* $TEST_REPORTS_DIR
   - find . -type f -ls
   - ls -al test-reports/
   - ls -al $HOME
+  - echo "this is just a test"
 
 after_script:
   - tar -C docs -cvzf ./pie-help.tar.gz html
