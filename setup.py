@@ -3,9 +3,20 @@ from setuptools import find_packages, setup
 from pip.req import parse_requirements
 
 def get_requirements(filename):
-    reqs = parse_requirements(filename)
-    return [str(r.req) for r in reqs]
+    """
+    Returns a list of requirements based on a standard pip 'requirements.txt'
+    file.
+    """
+    try:
+        from pip.download import PipSession
 
+        session = PipSession()
+    except ImportError:
+        session = None
+
+    reqs = parse_requirements(filename, session=session)
+
+    return [str(r.req) for r in reqs]
 def get_install_requires():
     return get_requirements('requirements.txt')
 
