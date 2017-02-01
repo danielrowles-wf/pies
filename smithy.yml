@@ -13,7 +13,6 @@ env:
 script:
   - printenv | grep 'GIT*'
   # - nosetests
-  - python setup.py sdist 
   - ls -al $HOME
   - touch $HOME/pies.txt
   - mkdir test-reports || true
