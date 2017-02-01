@@ -6,7 +6,7 @@ requirements:
   - requirements_dev.txt
 
 env:
-  - LIKES=PIES
+  - LIKES=BAD_PIES
   - EATS=TASTY_PIES
   - EAT_PIES_SLOWLY=3
 
